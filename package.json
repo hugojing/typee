@@ -1,0 +1,13 @@
+{
+  "name": "typee",
+  "version": "1.0.0",
+  "description": "A Javascript library for type checking",
+  "main": "src/index.js",
+  "repository": "https://github.com/hugojing/typee",
+  "author": {
+    "name": "hugojing",
+    "email": "toloric@163.com",
+    "url": "https://changshiban.com"
+  },
+  "license": "MIT"
+}
