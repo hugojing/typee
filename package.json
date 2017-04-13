@@ -1,13 +1,26 @@
 {
   "name": "typee",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Javascript library for type checking",
-  "main": "src/index.js",
+  "main": "dist/typee-umd-compiled.js",
   "repository": "https://github.com/hugojing/typee",
   "author": {
     "name": "hugojing",
     "email": "toloric@163.com",
     "url": "https://changshiban.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dist": "babel src/typee.js --out-file dist/typee-umd-compiled.js",
+    "compress": "uglifyjs --compress --mangle -o dist/typee-umd-compiled.min.js -- dist/typee-umd-compiled.js",
+    "prepublish": "npm run dist && npm run compress"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "uglify-js": "^2.8.22"
+  }
 }
