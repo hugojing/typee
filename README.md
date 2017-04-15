@@ -30,7 +30,7 @@ const typee = require('typee')
 
 ```html
 <!-- browser globals -->
-<script src="YOUR_PATH_TO/node-modules/typee/dist/typee-umd-compiled.min.js" />
+<script src="YOUR_PATH_TO/node-modules/typee/dist/typee-umd-compiled.min.js"></script>
 ```
 
 ## Usage
